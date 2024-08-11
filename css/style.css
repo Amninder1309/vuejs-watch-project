@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+    background: linear-gradient(-90deg, #9D4502, #FEAB6D);
+    height: 60px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+    align-items: center;
+}
+
+.nav-cont{
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.nav-links, .video-group{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.nav-links a {
+    margin: 0 20px; /* Adjust horizontal margin as needed */
+    text-decoration: none;
+    color: #333;
+}
+
+.cart{
+    display: inline-block;
+    padding:0 10px;
+    border:2px solid black;
+    vertical-align: middle;
+    align-items: center;
+}
+.video-group{
+    padding: 0;
+    height: 400px;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #FFEBDC,#9D4502);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+}
+.vdo{
+    width: 400px;
+    /* height: 400px; */
+}
+.vdo2{
+    width:400px;
+    height:350px;
+}
+.watch-list-cont{
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.watch-btn-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.watch-img{
+    width:18rem;
+    transform: scale(0.9);
+}
+
+.sec-head{
+    
+    text-align: center;
+    margin: 1rem;
+    margin-top: 3rem;
+    
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    transition: transform 0.2s;
+    border-radius: 6px;
+    box-shadow: 0 0 0 4px #888; /* Create a false border effect */
+}
+.card:hover{
+    box-shadow: 2px 2px 2px 4px #000;
+}
+.card:hover .watch-img{
+    /* border-radius: 6px; */
+    transform: scale(1);
+    transition: 200ms;
+}
+
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.disabledButton {
+    background-color: #7a7575;
+    cursor: not-allowed;
+    color: #333;
+}

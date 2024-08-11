@@ -1,0 +1,27 @@
+.watch-detail-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin:3rem;
+}
+
+.img-cont{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+
+}
+.img-cont img{
+    transition: transform 0.3s ease;
+    width:  20rem;
+}
+
+.img-cont:hover img{
+    transform:scale(1.2);
+    transition: 200ms;
+}
+
+.back-home{
+    margin-left: 40%;
+    margin-right: 40%;
+}

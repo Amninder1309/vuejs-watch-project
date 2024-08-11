@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Watch Corner</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/watch-detail-style.css">
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+      <div class="nav-bar">
+        <div class="nav-cont">
+            <h2><a href="/" style="text-decoration: none;">{{title}}</a></h2>
+            <div class="nav-links">
+                <a href="favourites.html">My Favourites</a>
+                <div class="cart">
+                    <p>Cart:{{cart.length}}</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <watch-detail-page @add-to-cart="updateCart" @remove-from-cart="removeFromCart"></watch-detail-page>
+      
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Import Components -->
+    <script src="./components/HomePage.js"></script>
+    <script src="./components/WatchDetailPage.js"></script>
+    <!-- <script src="./components/ReviewList.js"></script> -->
+
+    <!-- Mount App -->
+    <script>
+      app.mount('#app')
+    </script>
+  </body>
+</html>
